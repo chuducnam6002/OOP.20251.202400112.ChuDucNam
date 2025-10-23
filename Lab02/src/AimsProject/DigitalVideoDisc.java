@@ -11,6 +11,26 @@ public class DigitalVideoDisc {
     public int getLength() {return this.length;}
     public float getCost() {return this.cost;}
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public void setLength(int length) {
+        if (length > 0) {
+            this.length = length;
+        } else {
+            System.out.println("Error: Length must be a positive number.");
+        }
+    }
+
     public DigitalVideoDisc(String title){
         this.title = title;
     }  
@@ -34,3 +54,4 @@ public class DigitalVideoDisc {
     }
 
 }
+
