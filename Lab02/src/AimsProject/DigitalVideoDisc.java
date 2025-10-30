@@ -11,6 +11,7 @@ public class DigitalVideoDisc {
     public int getLength() {return this.length;}
     public float getCost() {return this.cost;}
 
+<<<<<<< HEAD
     public void setTitle(String title) {
         this.title = title;
     }
@@ -31,6 +32,8 @@ public class DigitalVideoDisc {
         }
     }
 
+=======
+>>>>>>> topic/store
     public DigitalVideoDisc(String title){
         this.title = title;
     }  
@@ -54,4 +57,7 @@ public class DigitalVideoDisc {
     }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> topic/store

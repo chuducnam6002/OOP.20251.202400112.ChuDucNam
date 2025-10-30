@@ -1,0 +1,13 @@
+Is JAVA a Pass by Value or a Pass by Reference programming language?
+Java is strictly a Pass by Value language.
+For primitive types, it passes a copy of the actual data value.
+For objects, it passes a copy of the reference address (often referred to as "Pass by Value of the Reference"). This copied address still points to the same object on the heap, allowing modifications to the object's contents.
+
+After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain? 
+The swap() method only swaps the local copies of the references within the method's scope. The original references (jungleDVD and cinderellaDVD) remain untouched and continue to point to their original objects after the method finishes.
+
+After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed? 
+The method changes the title because the local copy of the reference (dvd) points to the exact same object as jungleDVD. Calling a setter method (setTitle()) on this local reference successfully modifies the original object's internal state on the heap.
+
+Write a toString() method for the DigitalVideoDisc class. What should be the return type of this method? 
+The required return type of the toString() method is String.
