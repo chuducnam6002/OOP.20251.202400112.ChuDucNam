@@ -14,5 +14,22 @@ public class CartTest {
         
         cart.printCart();
 
+
+        cart.searchById(2); 
+
+        cart.searchById(99); 
+
+        cart.searchByTitle("Star"); 
+
+        cart.searchByTitle("KING"); 
+
+        cart.searchByTitle("Matrix"); 
+
+        cart.addDigitalVideoDisc(dvd4);
+
+        cart.searchByTitle("man"); 
+        
+        cart.printCart();
+
     }
 }
