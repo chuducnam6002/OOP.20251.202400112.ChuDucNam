@@ -1,7 +1,7 @@
 public class DigitalVideoDisc {
     
     private static int nbDigitalVideoDiscs = 0;
-    private int id; 
+    private int id;
     private String title;
     private String category;
     private String director;
@@ -31,7 +31,6 @@ public class DigitalVideoDisc {
             System.out.println("Error: Length must be a positive number.");
         }
     }
-
     public DigitalVideoDisc(String title){
         nbDigitalVideoDiscs++;
         this.id = nbDigitalVideoDiscs; 
@@ -48,7 +47,7 @@ public class DigitalVideoDisc {
     
     public DigitalVideoDisc(String director, String category, String title, float cost){
         nbDigitalVideoDiscs++;
-        this.id = nbDigitalVideoDiscs; 
+        this.id = nbDigitalVideoDiscs;
         this.director = director;
         this.category = category;
         this.title = title;
@@ -64,6 +63,7 @@ public class DigitalVideoDisc {
         this.length = length;
         this.cost = cost;
     }
+<<<<<<< HEAD
     
     public String toString() {
         return "DVD - " + this.getTitle() + 
@@ -78,4 +78,6 @@ public class DigitalVideoDisc {
     }
 
 
+=======
+>>>>>>> topic/class-members
 }

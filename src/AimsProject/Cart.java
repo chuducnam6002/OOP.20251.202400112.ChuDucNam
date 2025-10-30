@@ -83,6 +83,7 @@ public class Cart {
         return total;
     }
 
+<<<<<<< HEAD
     public void printCart() {
         System.out.println("***********************CART***********************");
         if (this.qtyOrdered == 0) {
@@ -120,4 +121,6 @@ public class Cart {
             }
         }
     }
+=======
+>>>>>>> topic/class-members
 }
