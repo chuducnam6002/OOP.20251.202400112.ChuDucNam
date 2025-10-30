@@ -73,5 +73,9 @@ public class DigitalVideoDisc {
                ": " + this.getCost() + " $";
     }
 
+    public boolean isMatch(String title) {
+        return this.getTitle().toLowerCase().contains(title.toLowerCase());
+    }
+
 
 }
