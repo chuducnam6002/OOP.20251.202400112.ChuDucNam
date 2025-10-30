@@ -98,6 +98,26 @@ public class Cart {
         
         System.out.println("***************************************************");
     }
+    public void searchById(int id) {
+        boolean found = false;
+        
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].getId() == id) {
+                System.out.println(itemsOrdered[i].toString());
+                found = true;
+                break; 
+            }
+        }
+    }
 
-
+    public void searchByTitle(String title) {
+        boolean found = false;
+        
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].isMatch(title)) {
+                System.out.println(itemsOrdered[i].toString());
+                found = true;
+            }
+        }
+    }
 }
